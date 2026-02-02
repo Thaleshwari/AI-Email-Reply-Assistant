@@ -1,0 +1,23 @@
+# Spring Boot
+springboot/target/
+springboot/.mvn/
+springboot/mvnw
+springboot/mvnw.cmd
+springboot/.idea/
+springboot/*.iml
+
+# React
+react/node_modules/
+react/build/
+react/.env.local
+react/.env.development.local
+react/.env.test.local
+react/.env.production.local
+react/npm-debug.log*
+react/yarn-debug.log*
+react/yarn-error.log*
+
+# Extension
+extension/node_modules/
+extension/dist/
+extension/build/
