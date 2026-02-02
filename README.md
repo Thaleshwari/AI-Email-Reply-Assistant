@@ -67,16 +67,16 @@ AI-Email-Reply-Assistant/
 - **Framework**: Spring Boot 3.x
 - **Language**: Java 17+
 - **Build Tool**: Maven
-- **AI Integration**: OpenAI API / Custom LLM
+- **AI Integration**: GEMINI API 
 
 ### Frontend
 - **Framework**: React 18
 - **Build Tool**: Vite
 - **Language**: JavaScript (ES6+)
-- **Styling**: CSS3 / Tailwind CSS (if applicable)
+- **Styling**: CSS
 
 ### Browser Extension
-- **Platform**: Chrome/Firefox Extension
+- **Platform**: Chrome Extension
 - **Technologies**: JavaScript, HTML, CSS
 
 ## 📦 Prerequisites
@@ -94,7 +94,7 @@ Before you begin, ensure you have the following installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/AI-Email-Reply-Assistant.git
+git clone https://github.com/Thaleshwari/AI-Email-Reply-Assistant.git
 cd AI-Email-Reply-Assistant
 ```
 
@@ -131,7 +131,7 @@ The frontend will be available at `http://localhost:5173`
 ```bash
 cd extension
 
-# Install dependencies (if applicable)
+# Install dependencies
 npm install
 
 # Build extension
@@ -158,10 +158,6 @@ server.port=8080
 ai.api.key=your-api-key-here
 ai.api.endpoint=https://api.openai.com/v1
 
-# Database Configuration (if applicable)
-spring.datasource.url=jdbc:mysql://localhost:3306/email_db
-spring.datasource.username=your-username
-spring.datasource.password=your-password
 
 # CORS Configuration
 cors.allowed.origins=http://localhost:5173
@@ -172,7 +168,7 @@ cors.allowed.origins=http://localhost:5173
 Create a `.env` file in `email-writer-react/`:
 
 ```env
-VITE_API_BASE_URL=http://localhost:8080/api
+VITE_API_BASE_URL=http://localhost:8080/api/email/generate
 VITE_APP_NAME=AI Email Reply Assistant
 ```
 
@@ -200,7 +196,7 @@ VITE_APP_NAME=AI Email Reply Assistant
 
 ### Base URL
 ```
-http://localhost:8080/api
+http://localhost:8080/api/email/generate
 ```
 
 ### Endpoints
@@ -213,7 +209,7 @@ Content-Type: application/json
 {
   "emailContent": "Original email text",
   "tone": "professional",
-  "length": "medium"
+  
 }
 ```
 
@@ -252,7 +248,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👥 Authors
 
-- **Your Name** - *Initial work* - [YourGitHub](https://github.com/YOUR-USERNAME)
+- **Thaleshwari** - *Initial work* - [YourGitHub](https://github.com/Thaleshwari)
 
 ## 🙏 Acknowledgments
 
@@ -276,4 +272,4 @@ For support, email your-email@example.com or open an issue in the GitHub reposit
 
 ---
 
-Made with ❤️ by [Your Name]
+Made with ❤️ by Thaleshwari
