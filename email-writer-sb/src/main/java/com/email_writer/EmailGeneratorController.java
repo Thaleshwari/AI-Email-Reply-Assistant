@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 @CrossOrigin(origins = "*")  // Consider restricting this in production
 public class EmailGeneratorController {
 
-    private final EmailGeneratorService emailGeneratorService;  // Fixed camelCase
+    private final EmailGeneratorService emailGeneratorService;
 
     @PostMapping("/generate")
     public ResponseEntity<String> generateEmail(@RequestBody EmailRequest emailRequest) {

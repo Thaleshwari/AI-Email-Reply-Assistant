@@ -20,6 +20,7 @@ public class EmailGeneratorService {
     private String geminiApiKey;
 
     public EmailGeneratorService(WebClient.Builder webClientBuilder) {
+
         this.webClient = webClientBuilder.build();
     }
 
@@ -38,7 +39,7 @@ public class EmailGeneratorService {
 
         // Do request and get response
         String response = webClient.post()
-                .uri(geminiApiUrl + geminiApiKey)  // Build URL with key
+                .uri(geminiApiUrl + "?key=" + geminiApiKey)  // Correctly include ?key= before the API key
                 .header("Content-Type", "application/json")
                 .bodyValue(requestBody)
                 .retrieve()

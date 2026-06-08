@@ -211,7 +211,7 @@ const observer = new MutationObserver((mutations) => {
             (node.matches('.aDh, .btC, [role="dialog"]') || node.querySelector('.aDh, .btC, [role="dialog"]'))
         );
         if (hasComposeElements) {
-            console.log("Compose Window Detected");
+            console.log("Compose Window Detected...");
             setTimeout(injectButton, 500);
         }
     }
